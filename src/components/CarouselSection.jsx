@@ -3,6 +3,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
+import img1 from "/src/assets/img1.jpg";
+import img2 from "/src/assets/img2.webp";
+import img3 from "/src/assets/img3.jpg";
+import img4 from "/src/assets/img4.jpg";
+
 import { Pagination, Autoplay } from "swiper/modules";
 import styles from "./CarouselSection.module.css";
 
@@ -16,19 +21,19 @@ export default function CarouselSection() {
         className={styles.mySwiper}
       >
         <SwiperSlide>
-          <img src="./src/assets/img1.jpg" alt="Slide 1" />
+          <img src={img1} alt="Slide 1" />
           <button className={styles.volunteerButton}>Seja Voluntário</button>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./src/assets/img2.webp" alt="Slide 2" />
+          <img src={img2} alt="Slide 2" />
           <button className={styles.volunteerButton}>Seja Voluntário</button>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./src/assets/img3.jpg" alt="Slide 2" />
+          <img src={img3} alt="Slide 3" />
           <button className={styles.volunteerButton}>Seja Voluntário</button>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./src/assets/img4.jpg" alt="Slide 2" />
+          <img src={img4} alt="Slide 3" />
           <button className={styles.volunteerButton}>Seja Voluntário</button>
         </SwiperSlide>
       </Swiper>
