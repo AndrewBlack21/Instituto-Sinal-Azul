@@ -16,19 +16,19 @@ export default function CarouselSection() {
         className={styles.mySwiper}
       >
         <SwiperSlide>
-          <img src="../src/assets/img1.jpg" alt="Slide 1" />
+          <img src="./src/assets/img1.jpg" alt="Slide 1" />
           <button className={styles.volunteerButton}>Seja Voluntário</button>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../src/assets/img2.webp" alt="Slide 2" />
+          <img src="./src/assets/img2.webp" alt="Slide 2" />
           <button className={styles.volunteerButton}>Seja Voluntário</button>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../src/assets/img3.jpg" alt="Slide 2" />
+          <img src="./src/assets/img3.jpg" alt="Slide 2" />
           <button className={styles.volunteerButton}>Seja Voluntário</button>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="../src/assets/img4.jpg" alt="Slide 2" />
+          <img src="./src/assets/img4.jpg" alt="Slide 2" />
           <button className={styles.volunteerButton}>Seja Voluntário</button>
         </SwiperSlide>
       </Swiper>
