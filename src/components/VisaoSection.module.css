@@ -1,0 +1,76 @@
+/* Estilo da seção principal */
+.visaoSection {
+  padding: 2rem 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Título da seção */
+.title {
+  color: #00aaff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Container do layout com imagem e texto */
+.visaoContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Wrapper da imagem */
+.imageWrapper {
+  flex: 1 1 45%; /* Proporção de 45% para a imagem */
+  max-width: 500px; /* Largura máxima para a imagem */
+}
+
+/* Estilo da imagem */
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Wrapper do texto */
+.textWrapper {
+  flex: 1 1 50%; /* Proporção de 50% para o texto */
+  max-width: 600px;
+  text-align: left;
+  padding: 1rem;
+}
+
+/* Citação do texto */
+.quote {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Descrição */
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .visaoContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imageWrapper,
+  .textWrapper {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

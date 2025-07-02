@@ -1,0 +1,37 @@
+.carouselContainer {
+  max-width: 800px; /* ou 100% */
+  height: 400px; /* altura que controla o tamanho do carrossel */
+  margin: 0 auto; /* centraliza na tela */
+  position: relative; /* botão absoluto dentro do container */
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* corta imagem proporcional */
+}
+
+.volunteerButton {
+  position: absolute;
+  bottom: 20px; /* distância da base */
+  right: 20px; /* distância da lateral */
+  padding: 10px 20px;
+  background: #5bc0de; /* cor azul claro */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.volunteerButton:hover {
+  background: #38b2ac; /* escurece no hover */
+}

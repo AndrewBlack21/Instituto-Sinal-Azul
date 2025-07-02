@@ -1,0 +1,122 @@
+.footer {
+  background-color: #4a90e2;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 25em 0 0;
+  text-align: left;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 0.5em 1em;
+}
+
+.tituloInstituto,
+.tituloContato,
+.tituloLocalizacao,
+.tituloCompromisso {
+  font-size: 2rem; /* Aumentando o tamanho da fonte */
+  font-weight: bold;
+  color: #fff; /* Cor chamativa - ajustável */
+  text-transform: uppercase; /* Deixa os títulos em maiúsculas */
+  margin-bottom: 10px;
+  letter-spacing: 1px; /* Espaçamento entre as letras */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra sutil no texto */
+  font-family: "Poppins";
+}
+.tituloSocial {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.logo {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.img {
+  max-width: 80px;
+  margin-bottom: 10px;
+  border-radius: 5em;
+}
+
+.slogan {
+  font-style: italic;
+}
+
+.contact,
+.location,
+.legal,
+.social {
+  flex: 1 1 50px;
+  text-decoration: none;
+}
+
+.contact p a {
+  text-decoration: none;
+}
+
+.contact p {
+  font-weight: 400;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 20px;
+}
+
+.socialicon {
+  display: flex; /* Coloca os ícones na vertical */
+  flex-direction: row; /* Organiza os ícones em coluna */
+  align-items: center; /* Alinha os ícones ao centro */
+  gap: 15px; /* Espaçamento entre os ícones */
+  margin: 0 0 10em;
+}
+.socialicon a:hover {
+  color: #007bff;
+  transform: scale(2);
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 1px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.bottom {
+  text-align: center;
+
+  font-size: 1em;
+  color: #000;
+  background: #bfd9f2;
+  align-items: center;
+  align-content: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: initial;
+    align-items: center;
+  }
+}

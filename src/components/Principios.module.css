@@ -1,0 +1,84 @@
+/* Container geral da seção */
+.principiosSection {
+  padding: 40px 20px;
+  background-color: #bfd9f2;
+}
+
+/* Título */
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1a73e8;
+  margin-bottom: 30px;
+}
+
+/* Container dos princípios */
+.principiosContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Box de cada princípio */
+.principio {
+  width: 23%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Ícones das imagens */
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+/* Títulos dos princípios */
+.principioTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  color: #1a73e8;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Texto dos princípios */
+.principioText {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+  margin-top: 15px;
+}
+
+/* Estilo de hover para os boxes */
+.principio:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .principio {
+    width: 23em;
+    background: #fff;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 10px;
+    box-sizing: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .principiosSection {
+    padding: 40px 20px;
+    background-color: #bfd9f2;
+  }
+}

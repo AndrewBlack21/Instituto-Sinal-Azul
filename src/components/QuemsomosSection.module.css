@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  gap: 2rem;
+  padding: 1em;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.textContent {
+  flex: 1.5;
+  min-width: 350px;
+  max-width: 600px;
+}
+
+.carousel {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+.card {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+.card {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.slide img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.title {
+  color: #007bff;
+  font-weight: 500;
+  align-items: center;
+}
+.subtitle {
+  font-weight: 500;
+}
+
+.text {
+  background: #007bff;
+  max-width: 6em;
+  font-size: 1em;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #fff;
+  max-height: 30em;
+  max-width: 50em;
+  padding: 1em;
+}
+.sliderContainer {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}

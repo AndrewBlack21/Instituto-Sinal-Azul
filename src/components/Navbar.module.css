@@ -1,0 +1,122 @@
+/* Estilo do Menu */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: #bfd9f2;
+  position: relative;
+  margin: 0 0 1em;
+}
+
+.logo {
+  height: 4em;
+  border-radius: 4em;
+  width: 4em;
+}
+
+/* Estilo de hover do logo */
+.navbar a .logo:hover {
+  transform: scale(1.3);
+  background-color: #111;
+}
+
+/* Menu Toggle (ícone hamburguer) */
+.menuToggle {
+  font-size: 28px;
+  display: none; /* Inicialmente escondido */
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.menuToggle .bar {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* Menu de navegação */
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.doacao {
+  background-color: #bfd9f2;
+  color: white;
+  border-radius: 8px;
+}
+
+.doacao:hover {
+  color: #fff;
+  transform: scale(1);
+  cursor: pointer;
+  background-color: #007bff;
+}
+
+li a:hover {
+  color: #fff;
+  transform: scale(2);
+}
+
+/* Responsividade - Menu hamburguer */
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block; /* Exibe o ícone hamburguer */
+  }
+  .logo {
+    height: 4em;
+    border-radius: 4em;
+    width: 4em;
+  }
+  li a:hover {
+    color: #007bff;
+    transform: scale(2);
+  }
+
+  .navLinks {
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    display: none; /* Menu oculto por padrão */
+    padding: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transform: translateX(100%); /* Menu fora da tela */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navLinks.active {
+    display: flex;
+    transform: translateX(0); /* Menu aparece suavemente */
+  }
+
+  /* Efeito de transformação do hamburguer para 'X' */
+  .menuToggle.open .bar:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+  }
+
+  .menuToggle.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menuToggle.open .bar:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+  }
+}
