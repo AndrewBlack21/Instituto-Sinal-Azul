@@ -91,7 +91,7 @@
 }
 .socialicon a:hover {
   color: #007bff;
-  transform: scale(2);
+  transform: scale(1.2);
 }
 
 .link {
@@ -119,4 +119,56 @@
     flex-direction: initial;
     align-items: center;
   }
+}
+
+/* Adicione este código ao final do seu arquivo Footer.module.css */
+
+/* Container para o ícone e o menu. A posição relativa é crucial! */
+.instagramContainer {
+  position: relative;
+  display: inline-block; /* Para se alinhar com os outros ícones */
+}
+
+/* Estilo do botão do Instagram para parecer com os outros links */
+.link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit; /* Herda a cor do texto do pai */
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* O menu dropdown que fica escondido e aparece ao clicar */
+.instagramMenu {
+  position: absolute;
+  bottom: 120%; /* Posição acima do ícone */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 10;
+  width: max-content; /* Largura se ajusta ao conteúdo */
+}
+
+/* Estilo dos links dentro do menu */
+.instagramMenu a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  white-space: nowrap; /* Evita que o texto quebre linha */
+}
+
+/* Efeito ao passar o mouse sobre os links do menu */
+.instagramMenu a:hover {
+  background-color: #f0f0f0;
 }

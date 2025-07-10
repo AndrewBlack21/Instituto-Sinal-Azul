@@ -1,8 +1,10 @@
 import styles from "./Footer.module.css";
 import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa"; // Importando os ícones do React Icons
 import img from "/src/assets/logo.jpg";
+import { useState } from "react"; // 1. Importar o useState
 
 export default function Footer() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <footer id="contato" className={styles.footer}>
       <div className={styles.container}>
@@ -17,15 +19,49 @@ export default function Footer() {
           </div>
 
           <div className={styles.socialicon}>
-            <a href="https://twitter.com" target="_blank" class={styles.link}>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              className={styles.link}
+            >
               <FaTwitter size={30} />
             </a>
-            <a href="https://facebook.com" target="_blank" class={styles.link}>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              className={styles.link}
+            >
               <FaFacebook size={30} />
             </a>
-            <a href="https://instagram.com" target="_blank" class={styles.link}>
-              <FaInstagram size={30} />
-            </a>
+
+            {/* 3. Container para o ícone do Instagram e o menu dropdown */}
+            <div className={styles.instagramContainer}>
+              {/* Este botão agora abre o menu em vez de navegar */}
+              <button
+                className={styles.link}
+                onClick={() => setIsMenuOpen(!isMenuOpen)} // Alterna o menu entre aberto/fechado
+              >
+                <FaInstagram size={30} />
+              </button>
+
+              {/* 4. O menu só aparece se isMenuOpen for true */}
+              {isMenuOpen && (
+                <div className={styles.instagramMenu}>
+                  <a
+                    href="https://www.instagram.com/sinal.azul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank"
+                  >
+                    Sina Azul
+                  </a>
+                  <a
+                    href="https://www.instagram.com/institutosinalazul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank"
+                  >
+                    Instituto Sina Azul
+                  </a>
+                </div>
+              )}
+            </div>
           </div>
         </div>
 

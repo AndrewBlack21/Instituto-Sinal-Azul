@@ -39,11 +39,11 @@ const Navbar = () => {
           <li>
             <a href="#trabalho">Nosso Trabalho</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#doacao">
-              <button className={styles.doacao}>Doação</button>
+              <button className={styles.doacao}>Seja um Parceiro</button>
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="#contato">Contato</a>
           </li>
