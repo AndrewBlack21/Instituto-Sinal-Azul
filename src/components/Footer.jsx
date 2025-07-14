@@ -51,13 +51,13 @@ export default function Footer() {
                     href="https://www.instagram.com/sinal.azul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                     target="_blank"
                   >
-                    Sina Azul
+                    Sinal Azul
                   </a>
                   <a
                     href="https://www.instagram.com/institutosinalazul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                     target="_blank"
                   >
-                    Instituto Sina Azul
+                    Instituto Sinal Azul
                   </a>
                 </div>
               )}
