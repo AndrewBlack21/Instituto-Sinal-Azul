@@ -4,7 +4,7 @@ import img from "/src/assets/img6.png"; // Certifique-se de usar o caminho corre
 export default function VisaoSection() {
   return (
     <section className={styles.visaoSection}>
-      <h1 className={styles.title}>Nossos Visão</h1>
+      <h1 className={styles.title}>Nossa Visão</h1>
       <div className={styles.visaoContainer}>
         <div className={styles.imageWrapper}>
           <img src={img} alt="Imagem de Visão" className={styles.image} />
