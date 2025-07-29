@@ -13,12 +13,12 @@ export default function FormularioSection() {
   const onSubmit = (data, e) => {
     // Enviar email com EmailJS
     emailjs
-      .sendForm(
-        "service_afsqj7d",
-        "template_9mxv35b",
-        e.target,
-        "JO9RmYnGzJtQDeB1c"
-      )
+      .sendForm
+      // "service_afsqj7d",
+      // "template_9mxv35b",
+      // e.target,
+      // "JO9RmYnGzJtQDeB1c"
+      ()
       .then(
         (result) => {
           console.log(result.text);
