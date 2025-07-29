@@ -48,7 +48,7 @@ export default function Footer() {
               {isMenuOpen && (
                 <div className={styles.instagramMenu}>
                   <a
-                    href="https://www.instagram.com/sinal.azul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    href="https://www.instagram.com/institutosinalazul/"
                     target="_blank"
                   >
                     Sinal Azul
