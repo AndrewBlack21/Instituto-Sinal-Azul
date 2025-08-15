@@ -22,19 +22,27 @@ export default function CarouselSection() {
       >
         <SwiperSlide>
           <img src={img7} alt="Slide 1" />
-          <button className={styles.volunteerButton}>Seja um Parceiro</button>
+          <button className={styles.volunteerButton}>
+            <a href="https://wa.me/5561982495101">Seja um Parceiro</a>
+          </button>
         </SwiperSlide>
         <SwiperSlide>
           <img src={img8} alt="Slide 2" />
-          <button className={styles.volunteerButton}>Seja um Parceiro</button>
+          <button className={styles.volunteerButton}>
+            <a href="https://wa.me/5561982495101">Seja um Parceiro</a>
+          </button>
         </SwiperSlide>
         <SwiperSlide>
           <img src={img9} alt="Slide 3" />
-          <button className={styles.volunteerButton}>Seja um Parceiro</button>
+          <button className={styles.volunteerButton}>
+            <a href="https://wa.me/5561982495101">Seja um Parceiro</a>
+          </button>
         </SwiperSlide>
         <SwiperSlide>
           <img src={img10} alt="Slide 4" />
-          <button className={styles.volunteerButton}>Seja um Parceiro</button>
+          <button className={styles.volunteerButton}>
+            <a href="https://wa.me/5561982495101">Seja um Parceiro</a>
+          </button>
         </SwiperSlide>
       </Swiper>
     </div>

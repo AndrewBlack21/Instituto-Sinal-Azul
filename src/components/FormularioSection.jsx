@@ -1,35 +1,7 @@
 import React from "react";
-import { useForm } from "react-hook-form";
-import emailjs from "emailjs-com";
 import styles from "./FormularioSection.module.css";
 
 export default function FormularioSection() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-
-  const onSubmit = (data, e) => {
-    // Enviar email com EmailJS
-    emailjs
-      .sendForm
-      // "service_afsqj7d",
-      // "template_9mxv35b",
-      // e.target,
-      // "JO9RmYnGzJtQDeB1c"
-      ()
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("Mensagem enviada com sucesso!");
-        },
-        (error) => {
-          console.log(error.text);
-          alert("Erro ao enviar mensagem.");
-        }
-      );
-  };
   return (
     <section className={styles.formSection}>
       <h2 className={styles.title}>Envolva-se conosco</h2>
@@ -39,48 +11,66 @@ export default function FormularioSection() {
         duradouro na vida daqueles a quem servimos.
       </p>
 
-      <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+      <form
+        action="https://formsubmit.co/contato@institutosinalazul.org"
+        method="POST"
+        className={styles.form}
+      >
+        {/* Campos ocultos para configuração do envio */}
+        <input
+          type="hidden"
+          name="_subject"
+          value="Nova mensagem do formulário"
+        />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="box" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://institutosinalazul.org/"
+        />
+
         <div className={styles.formGroup}>
           <label htmlFor="nome">Nome:</label>
           <input
             id="nome"
-            {...register("nome", { required: "Nome é obrigatorio" })}
+            name="nome"
+            type="text"
             placeholder="Digite seu nome"
+            required
           />
-          {errors.nome && <p className={styles.error}>{errors.nome.message}</p>}
         </div>
 
         <div className={styles.formGroup}>
           <label htmlFor="email">E-mail</label>
           <input
-            type="email"
             id="email"
-            {...register("email", { required: "E-mail é obrigatório" })}
+            name="email"
+            type="email"
             placeholder="Digite seu e-mail"
+            required
           />
-          {errors.email && (
-            <p className={styles.error}>{errors.email.message}</p>
-          )}
         </div>
+
         <div className={styles.formGroup}>
           <label htmlFor="telefone">Telefone:</label>
           <input
             id="telefone"
-            {...register("telefone", { required: "Telefone é obrigatório" })}
+            name="telefone"
+            type="tel"
             placeholder="Digite seu telefone"
+            required
           />
-          {errors.telefone && (
-            <p className={styles.error}>{errors.telefone.message}</p>
-          )}
         </div>
 
         <div className={styles.formGroup}>
           <label htmlFor="mensagem">Deixe um recado:</label>
           <textarea
             id="mensagem"
-            {...register("mensagem")}
+            name="mensagem"
             placeholder="Digite sua mensagem"
-          />
+            rows="5"
+          ></textarea>
         </div>
 
         <button type="submit" className={styles.submitButton}>

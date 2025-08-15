@@ -69,7 +69,7 @@ export default function Footer() {
           <h4 className={styles.tituloContato}>Contato</h4>
           <p>Fale com a a gente!</p>
           <p>
-            E-mail: <a href="">contato@institutosinalazul.com.br</a>
+            E-mail: <a href="">contato@institutosinalazul.org</a>
           </p>
         </div>
 

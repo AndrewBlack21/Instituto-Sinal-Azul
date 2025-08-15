@@ -32,6 +32,12 @@
   transition: background 0.3s;
 }
 
+.volunteerButton a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .volunteerButton:hover {
   background: #38b2ac; /* escurece no hover */
+  text-decoration: none;
 }

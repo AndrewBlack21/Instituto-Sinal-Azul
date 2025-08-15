@@ -18,6 +18,14 @@
   padding: 0.5em 1em;
 }
 
+.contact a {
+  color: #fff;
+}
+
+.contact a:hover {
+  color: #000;
+}
+
 .tituloInstituto,
 .tituloContato,
 .tituloLocalizacao,
